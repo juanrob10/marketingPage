@@ -1,0 +1,6 @@
+// for linux distribution
+sudo apt-get install libpq-dev
+pip install psycopg2  or
+add  in my requieremts.txt file: 
+psycopg2==2.9.5
+//and installed
