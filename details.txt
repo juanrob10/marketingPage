@@ -5,6 +5,9 @@ add  in my requieremts.txt file:
 psycopg2==2.9.5
 //and installed
 
+// for can view my database in vscode
+sudo apt install sqlite3
+
 //things about git and github
 
 git checkout -b  stages
