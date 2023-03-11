@@ -171,7 +171,7 @@ CORS_ORIGIN_WHITELIST=  env.list('CORS_ORIGIN_WHITELIST_DEV')
 
 CSRF_TRUSTED_ORIGINS=  env.list('CSRF_TRUSTED_ORIGINS_DEV')
 
-
+EMAIL_BACKEND= 'django.core.email.backends.console.EmailBackend'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
