@@ -18,7 +18,6 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -137,9 +136,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC-7'
+LANGUAGE_CODE = 'es-mx'
+
+TIME_ZONE = 'Etc/GMT+7'
 
 USE_I18N = True
 
@@ -167,9 +167,9 @@ REST_FRAMEWORK = {
     ],
 }
 
-CORS_ORIGIN_WHITELIST=  env.list('CORS_ORIGIN_WHITELIST_DEV')
+CORS_ORIGIN_WHITELIST =  env.list('CORS_ORIGIN_WHITELIST_DEV')
 
-CSRF_TRUSTED_ORIGINS=  env.list('CSRF_TRUSTED_ORIGINS_DEV')
+CSRF_TRUSTED_ORIGINS =  env.list('CSRF_TRUSTED_ORIGINS_DEV')
 
 EMAIL_BACKEND= 'django.core.email.backends.console.EmailBackend'
 
